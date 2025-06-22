@@ -150,7 +150,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 		var opt = {
 		pagebreak: { mode: ['css'], before: ${JSON.stringify(breakBefore)}, after: ${JSON.stringify(breakAfter)}, avoid: ${JSON.stringify(breakAvoid)} },
 		margin: ${margin},
-		filename: '${fileName}',
+		filename: ${JSON.stringify(fileName)},
 		html2canvas: {
 		  useCORS: true,
 		  scale: ${quality}
